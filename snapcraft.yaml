@@ -1,0 +1,21 @@
+name: lci
+version: 0.10.5
+summary: LCI LOLCODE INTERPRETR
+description: >
+  LOLCODE IZ AN ESOTERIC PROGRAMMIN LANGUAGE INSPIRD BY LOLSPEAK,
+  TEH LANGUAGE EXPRESD IN EXAMPLEZ OV TEH LOLCAT INTERNET MEME. DIS
+  SNAP PROVIDEZ TEH LCI LOLCODE INTERPRETR. 4 MOAR INFORMASHUN C
+  HTTP://LOLCODE.ORG. LCI WUZ CREATD AN IZ MAINTAIND BY JUSTIN J. MEZA.
+  DIS SNAP IZ NOT.
+icon: lci.png
+license: COPYING
+confinement: strict
+apps:
+  lci:
+    command: lci
+    plugs:
+      - home
+parts:
+  lci:
+    plugin: cmake
+    source: .
